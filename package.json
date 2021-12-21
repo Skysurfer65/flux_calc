@@ -1,0 +1,16 @@
+{
+  "name": "flux_calc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ex2-1.js",
+  "dependencies": {
+    "jest": "^27.4.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest",
+    "testcov": "jest --coverage"
+  },
+  "author": "",
+  "license": "ISC"
+}
