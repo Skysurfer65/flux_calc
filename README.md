@@ -10,6 +10,6 @@ A mock function to create tests around....
  - The third value in the array (if given) sets the flux to be at lest 42 but no more than 69.
  - If the array only consists of a single value, the flux will be 12 times this value
 
-# Author
+# Test programmer
 Richard Fehling, student at EC Utbildning, MVT21<br/>
 richard.fehling@learnet.se
