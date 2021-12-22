@@ -34,9 +34,10 @@ describe('Check flux calculator against specifications', function () {
         let text = "";
         //Iterated tests a 100 times to cover Math.random() when switch - case 0 is used
         for (let i = 0; i < 100; i++){
-            text += flux.calculateFlux(a, b, c, d) + ", ";
-            expect(flux.calculateFlux(a, b, c, d)).toBeGreaterThanOrEqual(42);
-            expect(flux.calculateFlux(a, b, c, d)).toBeLessThanOrEqual(53);
+            let fluxCalc = flux.calculateFlux(a, b, c, d);
+            text += fluxCalc + ", ";  
+            expect(fluxCalc).toBeGreaterThanOrEqual(42);
+            expect(fluxCalc).toBeLessThanOrEqual(53);
         }
         console.log("Flux calculation results switch position 0: " + text);
     });
@@ -49,9 +50,10 @@ describe('Check flux calculator against specifications', function () {
         let text = "";
         //Iterated tests a 100 times to cover Math.random() when switch - case 1 is used
         for (let i = 0; i < 100; i++){
-            text += flux.calculateFlux(a, b, c, d) + ", ";
-            expect(flux.calculateFlux(a, b, c, d)).toBeGreaterThanOrEqual(42);
-            expect(flux.calculateFlux(a, b, c, d)).toBeLessThanOrEqual(45);
+            let fluxCalc = flux.calculateFlux(a, b, c, d);
+            text += fluxCalc + ", ";
+            expect(fluxCalc).toBeGreaterThanOrEqual(42);
+            expect(fluxCalc).toBeLessThanOrEqual(45);
         }
         console.log("Flux calculation results switch position 1: " + text);
     });
@@ -64,9 +66,10 @@ describe('Check flux calculator against specifications', function () {
         let text = "";
         //Iterated tests a 100 times to cover Math.random() when switch - case 1 is used
         for (let i = 0; i < 100; i++){
-            text += flux.calculateFlux(a, b, c, d) + ", ";
-            expect(flux.calculateFlux(a, b, c, d)).toBeGreaterThanOrEqual(42);
-            expect(flux.calculateFlux(a, b, c, d)).toBeLessThanOrEqual(69);
+            let fluxCalc = flux.calculateFlux(a, b, c, d);
+            text += fluxCalc + ", ";
+            expect(fluxCalc).toBeGreaterThanOrEqual(42);
+            expect(fluxCalc).toBeLessThanOrEqual(69);
         }
         console.log("Flux calculation results switch position 12: " + text);
     });
@@ -99,8 +102,9 @@ describe('Check flux calculator against specifications', function () {
         //Iterated tests a 21 times with different value to a.[0]
         for (let i = -10; i <= 10; i++){
             a[0] = i;
-            text += "\na.[0] = " + a[0] + " ger Flux = " + flux.calculateFlux(a, b, c, d) + ", ";
-            expect(flux.calculateFlux(a, b, c, d)).toBe(i * 12);
+            let fluxCalc = flux.calculateFlux(a, b, c, d);
+            text += "\na.[0] = " + a[0] + " ger Flux = " + fluxCalc + ", ";
+            expect(fluxCalc).toBe(i * 12);
            
         }
         console.log("Flux calculation results with a.[0] value " + text);
@@ -115,8 +119,9 @@ describe('Check flux calculator against specifications', function () {
         //Iterated tests a 21 times with different value to c
         for (let i = -10; i <= 10; i++){
             c = i;
-            text += flux.calculateFlux(a, b, c, d) + ", ";
-            expect(flux.calculateFlux(a, b, c, d)).toBe(i);
+            let fluxCalc = flux.calculateFlux(a, b, c, d);
+            text += fluxCalc + ", ";
+            expect(fluxCalc).toBe(i);
            
         }
         console.log("Flux calculation results with c value " + text);
@@ -147,8 +152,9 @@ describe ("Check with some combined cases", function (){
 
         //Iterated tests a 100 times to cover Math.random() when switch - case 1 is used
         for (let i = 0; i < 100; i++){
-            expect(flux.calculateFlux(a, b, c, d)).toBeGreaterThanOrEqual(42);
-            expect(flux.calculateFlux(a, b, c, d)).toBeLessThanOrEqual(45);
+            let fluxCalc = flux.calculateFlux(a, b, c, d);
+            expect(fluxCalc).toBeGreaterThanOrEqual(42);
+            expect(fluxCalc).toBeLessThanOrEqual(45);
         }
     });
 
