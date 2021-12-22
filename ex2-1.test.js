@@ -1,6 +1,6 @@
 const flux = require("./ex2-1");
 
-describe('Check flux calculator against specifications', () => {
+describe('Check flux calculator against specifications', function () {
     //Input variables
     //Numeric variables
     let b, c, d;
@@ -122,3 +122,60 @@ describe('Check flux calculator against specifications', () => {
         console.log("Flux calculation results with c value " + text);
     });
   });
+
+describe ("Check with some combined cases", function (){
+    //Input variables
+    //Numeric variables
+    let b, c, d;
+    //Numeric array
+    let a = [];
+
+    test('It is only worth calculating if b and d are non-zero.', function () {
+        a = [0, 0, 1];
+        b = 0;
+        c = 10;
+        d = 0;
+
+        expect(flux.calculateFlux(a, b, c, d)).toBe(0);
+    });
+
+    test('b and d are non-zero and array with 3 elements', function () {
+        a = [0, 0, 1];
+        b = 1;
+        c = 10;
+        d = 1;
+
+        //Iterated tests a 100 times to cover Math.random() when switch - case 1 is used
+        for (let i = 0; i < 100; i++){
+            expect(flux.calculateFlux(a, b, c, d)).toBeGreaterThanOrEqual(42);
+            expect(flux.calculateFlux(a, b, c, d)).toBeLessThanOrEqual(45);
+        }
+    });
+
+    test('The array only holds one value', function () {
+        a = [10];
+        b = 10;
+        c = 10;
+        d = 10;
+
+        expect(flux.calculateFlux(a, b, c, d)).toBe(120);
+    });
+
+    test('The flux equals value of c', function () {
+        a = [10, 10];
+        b = 10;
+        c = -100;
+        d = 10;
+
+        expect(flux.calculateFlux(a, b, c, d)).toBe(-100);
+    });
+
+    test('Infinity flux!', function () {
+        a = [];
+        b = 10;
+        c = 10;
+        d = 10;
+
+        expect(flux.calculateFlux(a, b, c, d)).toBe(Infinity);
+    });
+});

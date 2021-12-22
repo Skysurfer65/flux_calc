@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1640101934708" clover="3.2.0">
-  <project timestamp="1640101934708" name="All files">
+<coverage generated="1640167998722" clover="3.2.0">
+  <project timestamp="1640167998722" name="All files">
     <metrics statements="20" coveredstatements="20" conditionals="16" coveredconditionals="16" methods="1" coveredmethods="1" elements="37" coveredelements="37" complexity="0" loc="20" ncloc="20" packages="1" files="1" classes="1"/>
     <file name="ex2-1.js" path="C:\Users\Bax Musik\Desktop\Coders\alg_övningar\flux_calc\ex2-1.js">
       <metrics statements="20" coveredstatements="20" conditionals="16" coveredconditionals="16" methods="1" coveredmethods="1"/>
-      <line num="13" count="1084" type="cond" truecount="4" falsecount="0"/>
-      <line num="14" count="1" type="stmt"/>
-      <line num="17" count="1083" type="cond" truecount="4" falsecount="0"/>
-      <line num="18" count="1" type="stmt"/>
-      <line num="21" count="1082" type="cond" truecount="2" falsecount="0"/>
-      <line num="22" count="998" type="stmt"/>
-      <line num="23" count="998" type="cond" truecount="4" falsecount="0"/>
+      <line num="13" count="1288" type="cond" truecount="4" falsecount="0"/>
+      <line num="14" count="2" type="stmt"/>
+      <line num="17" count="1286" type="cond" truecount="4" falsecount="0"/>
+      <line num="18" count="2" type="stmt"/>
+      <line num="21" count="1284" type="cond" truecount="2" falsecount="0"/>
+      <line num="22" count="1198" type="stmt"/>
+      <line num="23" count="1198" type="cond" truecount="4" falsecount="0"/>
       <line num="26" count="300" type="stmt"/>
       <line num="27" count="300" type="stmt"/>
-      <line num="31" count="300" type="stmt"/>
-      <line num="32" count="300" type="stmt"/>
+      <line num="31" count="500" type="stmt"/>
+      <line num="32" count="500" type="stmt"/>
       <line num="36" count="300" type="stmt"/>
       <line num="37" count="300" type="stmt"/>
       <line num="40" count="98" type="stmt"/>
       <line num="41" count="98" type="stmt"/>
-      <line num="44" count="998" type="stmt"/>
-      <line num="45" count="84" type="cond" truecount="2" falsecount="0"/>
-      <line num="46" count="42" type="stmt"/>
-      <line num="48" count="42" type="stmt"/>
+      <line num="44" count="1198" type="stmt"/>
+      <line num="45" count="86" type="cond" truecount="2" falsecount="0"/>
+      <line num="46" count="43" type="stmt"/>
+      <line num="48" count="43" type="stmt"/>
       <line num="52" count="1" type="stmt"/>
     </file>
   </project>
